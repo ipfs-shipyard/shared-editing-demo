@@ -76,7 +76,7 @@ It says the javascript file was not found. Let’s take care of that now.
 
 ## Bundling with Browserify
 
-To create our application we’ll need to create a single packaged javascript file containing the entirety of our app. For that we’re going to use Browserify, which you should install using npm:
+To deploy our application we’ll need to create a single packaged javascript file containing the entirety of our app. For that we’re going to use Browserify, which you should install using npm:
 
 `$ npm install browserify —save`
 
