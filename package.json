@@ -1,0 +1,22 @@
+{
+  "name": "ipfs-yjs-demo",
+  "version": "0.0.1",
+  "description": "Yjs demo over IPFS",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 12345 public",
+    "compile": "browserify src/app.js -o public/js/app.js -d"
+  },
+  "author": "Pedro Teixeira <i@pgte.me>",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "http-server": "^0.10.0",
+    "ipfs": "^0.24.1",
+    "y-array": "^10.1.3",
+    "y-ipfs-connector": "^1.1.0",
+    "y-memory": "^8.0.9",
+    "y-text": "^9.5.0",
+    "yjs": "^12.3.1"
+  }
+}
