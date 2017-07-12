@@ -193,7 +193,7 @@ Let’s then compile this and try it out.
 
 ## Summary
 
-In this episode we saw how you can start creating a collaborative text editor based on Yjs and IPFS. We setup our project, installed some dependencies and created a room, where we were able to listen to room membership changes, as well as receive and send messages.
+In this video we saw how you can start creating a collaborative text editor based on Yjs and IPFS. We setup our project, installed some dependencies, setup an IPFS node, a Yjs instance were able to sync the state between peers in a conflict-free way.
 
 ## CRDTs
 
