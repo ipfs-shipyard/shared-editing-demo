@@ -108,7 +108,7 @@ In the app, we now need to create an IPFS node:
 ```js
 const IPFS = require(‘ipfs’)
 const ipfs = new IPFS({
-  repo: repoPath(),
+  repo: repo(),
   config: {
     Addresses: {
       Swarm: [
