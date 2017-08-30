@@ -4,8 +4,8 @@
   "description": "Yjs demo over IPFS",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1 -p 12345 public",
-    "compile": "browserify src/app.js -o public/js/app.js -d"
+    "build": "browserify src/app.js -o public/js/app.js -d",
+    "start": "http-server -c-1 -p 12345 public"
   },
   "author": "Pedro Teixeira <i@pgte.me>",
   "license": "MIT",
