@@ -6,7 +6,7 @@ Links:
 
 - [Transcript](SCRIPT.md)
 - [Video of Demo](https://www.youtube.com/watch?v=-kdx8rJd8rQ)
-- [Live Demo](<insert IPFS hash>)
+- [Live Demo](https://ipfs.io/ipfs/QmUS49q6Hr6r61aciF3wPJd1xivstjFnyUWbUnrYom8dHE/)
 
 ## Set up
 
