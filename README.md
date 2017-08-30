@@ -22,6 +22,12 @@ Links:
 > npm install
 ```
 
+### Build
+
+```
+> npm run build
+```
+
 ### Run
 
 ```
@@ -31,14 +37,6 @@ Links:
 ### Open in browser
 
 Using a modern browser that supports WebRTC, like a recent version of Chrome or Firefox, open several windows of [http://localhost:12345](http://localhost:12345).
-
-## Development
-
-## Build
-
-```
-> npm run build
-```
 
 ## Known issues
 
