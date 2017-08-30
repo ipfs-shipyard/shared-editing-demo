@@ -9,6 +9,7 @@ const ipfs = new IPFS({
 
 ipfs.once('ready', () => ipfs.id((err, info) => {
   if (err) { throw err }
+
   console.log('IPFS node ready with address ' + info.id)
 }))
 
