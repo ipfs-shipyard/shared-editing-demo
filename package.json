@@ -4,19 +4,21 @@
   "description": "Yjs demo over IPFS",
   "main": "index.js",
   "scripts": {
-    "build": "browserify src/app.js -o public/js/app.js -d",
+    "pack": "webpack --config ./apppack.config.js",
     "start": "http-server -c-1 -p 12345 public"
   },
-  "author": "Pedro Teixeira <i@pgte.me>",
+  "author": "Pedro Teixeira <i@pgte.me> & Sri Harsha Seethalam <sri.harsha.seethalam@vanderbilt.edu>",
   "license": "MIT",
   "dependencies": {
-    "browserify": "^14.4.0",
     "http-server": "^0.10.0",
-    "ipfs": "^0.25.2",
+    "ipfs": "^0.28.2",
     "y-array": "^10.1.4",
-    "y-ipfs-connector": "^1.2.1",
+    "y-ipfs-connector": "^2.2.0",
     "y-memory": "^8.0.9",
     "y-text": "^9.5.1",
     "yjs": "^12.3.3"
+  },
+  "devDependencies": {
+    "webpack": "^3.6.0"
   }
 }

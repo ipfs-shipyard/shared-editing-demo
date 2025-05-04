@@ -1,9 +1,12 @@
-const IPFS = require('ipfs')
-const Y = require('yjs')
-require('y-memory')(Y)
-require('y-array')(Y)
-require('y-text')(Y)
-require('y-ipfs-connector')(Y)
+import IPFS from "ipfs";
+
+import Y from "yjs";
+import y_ipfs_connector from "y-ipfs-connector";
+import y_text from "y-text";
+import y_array from "y-array";
+import y_memory from "y-memory";
+
+Y.extend(y_ipfs_connector, y_text, y_array, y_memory );
 
 function repo () {
   return 'ipfs/yjs-demo/' + Math.random()
@@ -13,7 +16,14 @@ const ipfs = new IPFS({
   repo: repo(),
   EXPERIMENTAL: {
     pubsub: true
-  }
+  },
+    config: { // overload the default config
+        Addresses: {
+            Swarm: [
+                '/dns4/ws-star.discovery.libp2p.io/tcp/443/wss/p2p-websocket-star/'
+            ]
+        },
+    }
 })
 
 ipfs.once('ready', () => ipfs.id((err, info) => {
